@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Mühle",
+    "slug": "muehle-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "muehle",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FDFAF5"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.muehle.muehle"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#A89245"
+      },
+      "package": "app.muehle.muehle"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-localization"
+    ]
+  }
+}
