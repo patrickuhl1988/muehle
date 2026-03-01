@@ -1,35 +1,20 @@
 {
-  "cli": {
-    "version": ">= 12.0.0"
-  },
+  "cli": { "version": ">= 12.0.0" },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
+    "development": { "developmentClient": true, "distribution": "internal" },
     "preview": {
       "distribution": "internal",
-      "android": {
-        "buildType": "apk"
-      },
-      "env": {
-        "NPM_CONFIG_OMIT": "dev"
-      }
+      "android": { "buildType": "apk" },
+      "env": { "NPM_CONFIG_OMIT": "dev" },
+      "node": "18.18.0"
     },
     "production": {
-      "android": {
-        "buildType": "app-bundle"
-      },
-      "env": {
-        "NPM_CONFIG_OMIT": "dev"
-      }
+      "android": { "buildType": "app-bundle" },
+      "env": { "NPM_CONFIG_OMIT": "dev" },
+      "node": "18.18.0"
     }
   },
   "submit": {
-    "production": {
-      "android": {
-        "serviceAccountKeyPath": "./google-service-account.json"
-      }
-    }
+    "production": { "android": { "serviceAccountKeyPath": "./google-service-account.json" } }
   }
 }
