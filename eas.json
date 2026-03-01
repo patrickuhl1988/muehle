@@ -1,16 +1,32 @@
 {
+  "cli": {
+    "version": ">= 12.0.0"
+  },
   "build": {
-    "production": {
-      "node": "20.18.0",
-      ... // bestehende Config beibehalten
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "node": "20.18.0"
     },
     "preview": {
-      "node": "20.18.0",
-      ... // bestehende Config beibehalten
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "node": "20.18.0"
     },
-    "development": {
-      "node": "20.18.0",
-      ... // bestehende Config beibehalten
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "node": "20.18.0"
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./google-service-account.json"
+      }
     }
   }
 }
